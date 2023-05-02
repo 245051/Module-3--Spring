@@ -1,0 +1,5 @@
+package com.client.one.repositories;
+
+public interface FTTIssueBaseRepository {
+
+}

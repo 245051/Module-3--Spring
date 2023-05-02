@@ -1,0 +1,5 @@
+package com.client.one.model;
+
+public class FTTIssueBase {
+
+}

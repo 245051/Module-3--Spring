@@ -1,0 +1,22 @@
+package com.client.one.serviceimpl;
+
+public class AssetImpl {
+	@Override
+	public String toString() {
+		return "FTTIssueBase [intstrid=" + intstrid + ", statType=" + statType + ", demoCurrCode=" + demoCurrCode
+				+ ", issueType=" + issueType + ", maturityExpiryTms=" + maturityExpiryTms + ", issueSearchText="
+				+ issueSearchText + ", nominalValue=" + nominalValue + ", nominalValueDecimal=" + nominalValueDecimal
+				+ ", getIntstrid()=" + getIntstrid() + ", getStatType()=" + getStatType() + ", getDemoCurrCode()="
+				+ getDemoCurrCode() + ", getIssueType()=" + getIssueType() + ", getMaturityExpiryTms()="
+				+ getMaturityExpiryTms() + ", getIssueSearchText()=" + getIssueSearchText() + ", getNominalValue()="
+				+ getNominalValue() + ", getNominalValueDecimal()=" + getNominalValueDecimal() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+		
+	
+	
+}
+
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FirstRestmysqlJPA3&apos; to &apos;FirstRestmysqlSwagger&apos;" description="Rename resource &apos;FirstRestmysqlJPA3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/FirstRestmysqlJPA3" name="FirstRestmysqlSwagger" stamp="1681965097956" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+package com.cts.example.service;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cts.example.dto.BlogDto;
+import com.cts.example.entity.EntityElement;
+import com.cts.example.repository.BlogRepository;
+
+public class BlogService {
+	@Autowired
+	BlogRepository repo;
+	
+
+	public EntityElement create(@Valid BlogDto blog) {
+		EntityElement ele;
+		
+		ele.getContent(blog);
+		ele.getId(blog);
+		ele.getTitleString(blog);
+		
+		return repo.save(ele);
+	}
+
+}

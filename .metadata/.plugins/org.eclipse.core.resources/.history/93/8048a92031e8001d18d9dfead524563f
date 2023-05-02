@@ -1,0 +1,5 @@
+package com.cts.example.entity;
+
+public class EntityElement {
+
+}

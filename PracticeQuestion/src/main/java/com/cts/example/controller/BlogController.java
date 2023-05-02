@@ -1,0 +1,34 @@
+package com.cts.example.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cts.example.dto.BlogDto;
+import com.cts.example.entity.EntityElement;
+import com.cts.example.service.BlogService;
+
+@RestController
+@RequestMapping("/blog/1.0")
+public class BlogController {
+	@Autowired
+	BlogService service;
+	@PostMapping("/create")
+	public ResponseEntity<EntityElement> create(@RequestBody @Valid BlogDto blog){
+		return new ResponseEntity<>(service.create(blog),HttpStatus.CREATED);
+	}
+	@GetMapping("/retrieve")
+	public List<EntityElement> retrieve(){
+		return service.fetch();
+	}
+
+}

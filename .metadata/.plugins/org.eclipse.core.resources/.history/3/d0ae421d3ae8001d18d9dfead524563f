@@ -1,0 +1,7 @@
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cts.example.entity.EntityElement;
+
+public interface BlogRepository extends JpaRepository<EntityElement,Long> {
+
+}

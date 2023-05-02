@@ -1,0 +1,17 @@
+package com.cts.example.service;
+
+import javax.validation.Valid;
+
+import com.cts.example.dto.BlogDto;
+import com.cts.example.entity.EntityElement;
+
+public class BlogService {
+	@Autowired
+	
+
+	public EntityElement create(@Valid BlogDto blog) {
+		
+		return null;
+	}
+
+}
